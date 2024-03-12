@@ -1,0 +1,46 @@
+{
+  "extends": [
+    "react-app",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:@next/next/recommended",
+    "@feature-sliced/eslint-config/rules/public-api",
+    "@feature-sliced/eslint-config/rules/layers-slices"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-no-bind": "off",
+    "react/default-props": "off",
+    "react/require-default-props": "off",
+    "react/destructuring-assignment": ["off"],
+    "import/prefer-default-export": "off",
+    "import/no-cycle": "off",
+    "no-multi-assign": "off",
+    "no-param-reassign": "off",
+    "prefer-destructuring": "off",
+    "quotes": ["error", "single"],
+    "semi": "error",
+    "no-console": "error",
+    "import/no-internal-modules": "warn",
+    "boundaries/element-types": "warn"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "plugins": ["import", "jest-dom"],
+  "ignorePatterns": [
+    ".next",
+    "coverage",
+    "node_modules",
+    "next.config.js",
+    "jest.config.js",
+    "babel.config.js",
+    "tailwind.config.js",
+    "postcss.config.js"
+  ]
+}

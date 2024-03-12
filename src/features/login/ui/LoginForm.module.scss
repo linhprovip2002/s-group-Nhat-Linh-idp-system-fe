@@ -1,0 +1,7 @@
+.loginFormContainer {
+  @apply flex flex-col space-y-4;
+
+  .loginForm {
+    @apply space-y-2;
+  }
+}
